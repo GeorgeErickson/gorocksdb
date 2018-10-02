@@ -1,5 +1,6 @@
 ```bash
 git subtree add --prefix deps/rocksdb https://github.com/facebook/rocksdb.git v5.15.10 --squash
+git subtree add --prefix deps/lz4 git@github.com:lz4/lz4.git v1.8.3 --squash
 
 pushd deps/rocksdb
 ./build_tools/build_detect_platform /tmp/rocksdb
